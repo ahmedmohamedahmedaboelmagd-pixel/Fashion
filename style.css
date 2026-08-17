@@ -85,8 +85,8 @@ border-bottom-color:gold;
 }
 /* section1 */
 .container{
-    width: 700px;
-    height: 350px;
+    width:40%;
+    height:50%;
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 70px 10px black;
@@ -101,8 +101,11 @@ border-bottom-color:gold;
 
 }
 .container h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 3px;
     color: white;
 }
@@ -162,7 +165,7 @@ font-weight: 700;
 /* section2 */
 .content{
     width: 90%;
-    height: 800px;
+    height: 1000PX;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -386,8 +389,140 @@ left: 8px;}
     border-bottom: solid 2px white;
     transition: 0.5s;
 }
+@media(min-width:350px) and (max-width:1150px){
+.nav{width:100%;
+    height: 13%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+.logo ,ul{width: 100%;
+display: flex;
+justify-content: space-evenly;}
+ul li a
+{font-size: 16px;}
+.container{display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 450px;
+height:40%;}
+.container h3{
+    font-size: 30px;
+    height: auto;
+    width: auto;
+}
+.par{
+    font-size: 14px;
+}
+.content{
+    width: 90%;
+    height: 900PX;
+    overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+box-shadow: none;
+}
+.title{
+    font-size: 25px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-shadow: none;
+}
+.row{
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+
+}
+.column{
+    width: 100%;
+    height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+.women ,.kids{
+    height:100%;
+    box-shadow: none;
+    width: 100%;
+    
+}
+.footer1{display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.policy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.row:hover,.women:hover,.kids:hover{
+    transform: scale(0.9);
+}
+}
+@media(min-width:600px) and (max-width:1150px) {
+  .column{
+    width: 100%;
+    height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;} 
+.women button,.kids button{
+    position: relative;
+    bottom: 30px;
+    left:16px
+} 
+.row:hover,.women:hover,.kids:hover{
+    transform: scale(0.9);
+}
+}
+@media(min-width:350px) and (max-width:600px){
+  .row{
+    width: 100%;
+    height: 50%;
+    box-shadow: none;
+}
+.man button{
+    position: relative;
+    bottom: 20px;
+}
+.column{
+    width: 100%;
+    height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+    box-shadow: none;}
+.women ,.kids{
+    height:100%;
+    box-shadow: none;
+    width: 100%;
+}  .policy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+}
+.policy p{
+    width: 100px;
+}
+.policy p a{
+    font-size: 10px;
+}
+.row:hover,.women:hover,.kids:hover{
+    transform: scaleX(1.05) ,scaleY(1.05)
+}
+}
+
 /* style for small screen */
-@media (max-width:1150px){
+/* @media (max-width:1150px){
 .content{
     width: 80%;
     height: 1200px;
@@ -520,11 +655,9 @@ ul{
 .women:hover ,.kids:hover ,.row:hover{
    transform: scale(1.1);
 }
-}
-
-
+} */
 /* style for small screen */
-@media(max-width:600px){
+/* @media(max-width:600px){
     .women:hover ,.kids:hover ,.row:hover{
    transform: scale(1.1);
 }
@@ -658,8 +791,9 @@ ul{
     padding: 10px;
     width: 100px;
 }
-}
-@media (min-width:350px) and (max-width:400px){
+} */
+/* style for small screen */
+/* @media (min-width:350px) and (max-width:400px){
 
     .women:hover ,.kids:hover ,.row:hover{
    transform: scale(1.1);
@@ -793,7 +927,6 @@ ul{
 
 }
 .policy p{
-    /* padding: 10px; */
     width: 50px;
         flex-grow: 1;
 
@@ -823,4 +956,4 @@ ul{
     background-position: -70PX 0PX;
 
 }
-}
+} */
