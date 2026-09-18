@@ -11,7 +11,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+    overflow: hidden;
 }
 .section1{
     background-image:url(6ab1a7a6-f441-4d2a-8bee-d1bdb46a0597.jfif);
